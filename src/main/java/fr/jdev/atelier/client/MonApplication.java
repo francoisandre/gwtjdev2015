@@ -24,7 +24,7 @@ public class MonApplication implements EntryPoint {
 		VerticalPanel mainContent = new VerticalPanel();
 		mainContent.setWidth("100%");
 		mainContent.add(jumbotron);
-		TaskCreationPanel taskCreationPanel = new TaskCreationPanel();
+		NewTaskCreationPanel taskCreationPanel = new NewTaskCreationPanel();
 		mainContent.add(taskCreationPanel);
 		RootPanel.get().add(mainContent);
 	}
