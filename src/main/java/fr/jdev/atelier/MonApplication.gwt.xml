@@ -15,13 +15,17 @@
   <inherits name='com.google.gwt.user.theme.clean.Clean'/>
   <inherits name="org.gwtbootstrap3.GwtBootstrap3"/>
   <inherits name="org.gwtbootstrap3.extras.datetimepicker.DateTimePicker"/>
+  <inherits name="org.gwtbootstrap3.extras.growl.Growl"/>
   <!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
   <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
   <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
 
-  <!-- Other module inherits                                      -->
+	<replace-with
+		class="fr.jdev.atelier.client.ClientFactoryImpl">
+		<when-type-is class="fr.jdev.atelier.client.ClientFactory" />
+	</replace-with>
 
-  <!-- Specify the app entry point class.                         -->
+    <!-- Specify the app entry point class.                         -->
   <entry-point class='fr.jdev.atelier.client.MonApplication'/>
 
   <!-- Specify the paths for translatable code                    -->
