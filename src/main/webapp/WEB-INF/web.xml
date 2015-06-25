@@ -6,14 +6,15 @@
          xmlns="http://java.sun.com/xml/ns/javaee">
 
   <!-- Servlets -->
+  
   <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>fr.jdev.atelier.server.GreetingServiceImpl</servlet-class>
-  </servlet>
+		<servlet-name>taskServlet</servlet-name>
+		<servlet-class>fr.jdev.atelier.server.service.TaskServiceImpl</servlet-class>
+	</servlet>
   
   <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/monapplication/greet</url-pattern>
+    <servlet-name>taskServlet</servlet-name>
+    <url-pattern>/monapplication/tasks</url-pattern>
   </servlet-mapping>
   
   <!-- Default page to serve -->

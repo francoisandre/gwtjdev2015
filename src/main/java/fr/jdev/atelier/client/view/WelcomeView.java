@@ -14,7 +14,7 @@ public interface WelcomeView extends IsWidget {
 
 	void setPresenter(Presenter presenter);
 
-	public interface Presenter {
+	public interface Presenter extends DetailPresenter {
 		void addTask(Task task);
 
 		void showList();

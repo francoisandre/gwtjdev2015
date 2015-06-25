@@ -8,6 +8,7 @@ import com.google.gwt.place.shared.PlaceController;
 
 import fr.jdev.atelier.client.event.NotificationEvent;
 import fr.jdev.atelier.client.view.TaskConsultView;
+import fr.jdev.atelier.client.view.TaskConsultViewImpl;
 import fr.jdev.atelier.client.view.TaskListView;
 import fr.jdev.atelier.client.view.TaskListViewImpl;
 import fr.jdev.atelier.client.view.WelcomeView;
@@ -20,6 +21,7 @@ public class ClientFactoryImpl implements ClientFactory {
 
 	WelcomeView welcomeView = new WelcomeViewImpl();
 	TaskListView taskListView = new TaskListViewImpl();
+	TaskConsultView taskConsultView = new TaskConsultViewImpl();
 
 	public ClientFactoryImpl() {
 		getEventBus().addHandler(NotificationEvent.TYPE, this);
@@ -47,7 +49,7 @@ public class ClientFactoryImpl implements ClientFactory {
 
 	@Override
 	public TaskConsultView getTaskConsultView() {
-		return null;
+		return taskConsultView;
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class TaskConsultPlace extends Place {
 		}
 
 		public String getToken(TaskConsultPlace place) {
-			return "";
+			return place.getTaskUuid();
 		}
 	}
 }

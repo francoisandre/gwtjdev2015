@@ -14,8 +14,8 @@ public interface TaskListView extends IsWidget {
 
 	void setPresenter(Presenter presenter);
 
-	public interface Presenter {
-		void display(String taskUuid);
+	public interface Presenter extends DetailPresenter {
+
 	}
 
 }
