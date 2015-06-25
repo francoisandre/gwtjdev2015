@@ -47,7 +47,6 @@ public class ClientFactoryImpl implements ClientFactory {
 
 	@Override
 	public TaskConsultView getTaskConsultView() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
