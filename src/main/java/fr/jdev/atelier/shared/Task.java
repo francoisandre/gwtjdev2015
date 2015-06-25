@@ -6,6 +6,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 
 public class Task implements IsSerializable {
 
+	private String uuid;
 	private String description;
 	private String responsible;
 	private Date deadLine;
@@ -32,6 +33,14 @@ public class Task implements IsSerializable {
 
 	public void setDeadLine(Date deadLine) {
 		this.deadLine = deadLine;
+	}
+
+	public String getUuid() {
+		return uuid;
+	}
+
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
 	}
 
 }
